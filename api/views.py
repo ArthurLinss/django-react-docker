@@ -3,6 +3,7 @@ from datetime import datetime
 
 
 def index(request):
+    print("index view")
     current_time = datetime.now().strftime("%-I:%S %p")
     current_date = datetime.now().strftime("%A %m %-Y")
 

@@ -34,9 +34,13 @@ function App() {
   const [currentDate, setCurrentDate] = useState(0);
   useEffect(() => {
   let api_url = 'http://127.0.0.1:8000/'
-  fetch(api_url).then(res => res.json()).then(data => {
+  console.log(api_url)
+  fetch(api_url.concat("api")).then(res => res.json()).then(data => {
       setCurrentTime(data.time);
-      setCurrentDate(data.date)
+      setCurrentDate(data.date);
+
+      console.log(data.time)
+      console.log(data.date)
     });
   }, []);
   return (

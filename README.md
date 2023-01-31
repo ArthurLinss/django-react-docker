@@ -32,6 +32,7 @@ open http://localhost:3000/ in browser (or http://127.0.0.1:3000/ ?)
 # Literature
 
 - https://www.honeybadger.io/blog/docker-django-react/
+- https://github.com/khabdrick/django-react-docker-sample
 
 # React
 
@@ -47,4 +48,11 @@ npx create-react-app frontend
 open -a docker
 docker-compose build
 docker-compose up
+```
+
+Testing docker container (adding `ENTRYPOINT [ "/bin/bash"]` to api/Dockerfile)
+
+```
+docker build -f api/Dockerfile -t test .
+docker run -it test
 ```
