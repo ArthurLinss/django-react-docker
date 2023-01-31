@@ -26,4 +26,25 @@ pip install django-cors-headers
 ```
 python manage.py check
 python manange.py runserver
+open http://localhost:3000/ in browser (or http://127.0.0.1:3000/ ?)
+```
+
+# Literature
+
+- https://www.honeybadger.io/blog/docker-django-react/
+
+# React
+
+Create fresh React application:
+
+```
+npx create-react-app frontend
+```
+
+# Docker
+
+```
+open -a docker
+docker-compose build
+docker-compose up
 ```
